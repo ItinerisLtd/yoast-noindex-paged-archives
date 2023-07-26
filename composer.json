@@ -1,0 +1,47 @@
+{
+  "name": "itinerisltd/yoast-noindex-paged-archives",
+  "description": "Basic WordPress plugin template for Composer",
+  "license": "MIT",
+  "type": "wordpress-muplugin",
+  "authors": [
+    {
+      "name": "Itineris Limited",
+      "email": "dev@itineris.co.uk",
+      "homepage": "https://itineris.co.uk/",
+      "role": "Company"
+    },
+    {
+      "name": "Lee Hanbury-Pickett",
+      "email": "lee.hanbury@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "homepage": "https://github.com/itinerisltd/yoast-noindex-paged-archives/",
+  "support": {
+    "email": "dev@itineris.co.uk",
+    "issues": "https://github.com/ItinerisLtd/yoast-noindex-paged-archives/issues",
+    "source": "https://github.com/ItinerisLtd/yoast-noindex-paged-archives"
+  },
+  "require": {
+    "php": "^8.1",
+    "itinerisltd/itineris-wp-coding-standards": "^1.0"
+  },
+  "prefer-stable": true,
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    },
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.1.x-dev"
+    }
+  },
+  "scripts": {
+    "style:check": "phpcs",
+    "style:fix": "phpcbf"
+  }
+}
